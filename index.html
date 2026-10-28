@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Parameter URL</title>
+</head>
+<body>
+
+    <h1 id="sapa">Halo!</h1>
+
+    <script>
+        const p = new URLSearchParams(location.search);
+        const nama = p.get("nama") || "Tamu";
+
+        document.querySelector("#sapa")
+            .textContent = `Halo, ${nama}!`;
+    </script>
+
+</body>
+</html>

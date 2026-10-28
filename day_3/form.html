@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KasirKu - Form Tambah Produk</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="page-header">
+      <div>
+        <div class="sub-breadcrumb">Daftar Produk / TAMBAH PRODUK BARU</div>
+        <h1>Formulir Tambah Produk Warung</h1>
+        <p style="color: #64748b;">Lengkapi data barang dengan teliti, agar margin keuntungan terhitung akurat.</p>
+      </div>
+    </div>
+
+    <div class="grid-2col">
+      <!-- Form Input -->
+      <form action="" method="post">
+        <div style="background: white; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 20px;">
+          <h3 style="margin-bottom: 16px;">1. Informasi Pokok Barang</h3>
+          <div>
+            <label for="nama_product">Nama Produk Warung</label>
+            <input type="text" id="nama_product" />
+          </div>
+        </div>
+
+        <div style="background: white; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 20px;">
+          <h3 style="margin-bottom: 16px;">2. Harga dan Margin Laba</h3>
+          <div>
+            <label for="harga_jual">Harga Jual Kasir (Rp)</label>
+            <input type="number" id="harga_jual" />
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; gap: 12px;">
+          <button type="button" class="btn-secondary">Batal</button>
+          <button type="submit" class="btn-primary">Simpan</button>
+        </div>
+      </form>
+
+      <!-- Bagian Tabel Penampung Hasil Input JS -->
+      <div>
+        <div style="background: white; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0;">
+          <h3 style="margin-bottom: 12px;">Daftar Produk Masuk</h3>
+          <div class="table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th><input type="checkbox"></th>
+                  <th>NAMA PRODUK</th>
+                  <th>KATEGORI / SATUAN</th>
+                  <th>HARGA JUAL</th>
+                  <th>STOK</th>
+                  <th>STATUS</th>
+                  <th>AKSI</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Baris data baru akan masuk secara otomatis melalui script.js di sini -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>Kasirku POS Warung &copy; (Kilat Retail UMKM)</div>
+  </footer>
+
+</body>
+</html>

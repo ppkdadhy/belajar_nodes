@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KasirKu - Tambah Produk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header sesuai semantic gambar dua -->
+  <header class="navbar">
+    <div class="logo">KasirKu</div>
+    <!-- Nav berada di dalam header / bagian navigasi -->
+    <nav class="nav-links">
+      <a href="#">Produk</a>
+      <a href="#">Tambah</a>
+      <a href="#">Transaksi</a>
+    </nav>
+  </header>
+
+  <!-- Main konten utama -->
+  <main class="container">
+    <h1 class="title">Tambah Produk</h1>
+
+    <form class="form-container">
+      <div class="form-row">
+        <!-- Section 1: Input Nama Produk (Sesuai diagram semantic) -->
+        <section class="form-group">
+          <label for="nama-produk">Nama produk</label>
+          <input type="text" id="nama-produk" value="Kopi Sachet" placeholder="Masukkan nama produk">
+        </section>
+
+        <!-- Section 2: Input Harga (Sesuai diagram semantic) -->
+        <section class="form-group">
+          <label for="harga-produk">Harga (Rp)</label>
+          <input type="number" id="harga-produk" value="2500" placeholder="Masukkan harga">
+        </section>
+      </div>
+
+      <!-- Tombol Simpan -->
+      <div class="button-wrapper">
+        <button type="submit" class="btn-simpan">Simpan</button>
+      </div>
+    </form>
+
+    <!-- Alert / Pesan Notifikasi Sukses -->
+    <div class="alert-success">
+      <span class="icon">&#10003;</span> Produk tersimpan
+    </div>
+  </main>
+
+  <!-- Footer sesuai semantic gambar dua -->
+  <footer>
+    &copy; 2026 KasirKu
+  </footer>
+
+</body>
+</html>

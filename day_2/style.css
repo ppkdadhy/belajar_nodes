@@ -1,0 +1,165 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header & Navigasi */
+header.navbar {
+  background-color: #222222;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fcae1e; /* Warna kuning emas KasirKu */
+}
+
+nav.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+nav.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+nav.nav-links a:hover {
+  color: #fcae1e;
+}
+
+/* Container Utama */
+main.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 0 20px;
+  flex: 1;
+}
+
+.title {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+  color: #111;
+}
+
+/* Layout Form (2 Kolom / Section) */
+.form-row {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+/* Section Input */
+section.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+section.form-group label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+section.form-group input {
+  padding: 12px 15px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+section.form-group input:focus {
+  border-color: #fcae1e;
+  background-color: #fff;
+}
+
+/* Alignment Tombol Simpan */
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+.btn-simpan {
+  background-color: #ffc107;
+  color: #000;
+  border: 2px solid #000;
+  font-weight: bold;
+  padding: 10px 45px;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-simpan:hover {
+  background-color: #e0a800;
+}
+
+.btn-simpan:active {
+  transform: scale(0.98);
+}
+
+/* Notifikasi Sukses */
+.alert-success {
+  background-color: #e8f5e9;
+  border: 2px solid #2e7d32;
+  color: #1b5e20;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.alert-success .icon {
+  font-size: 1.1rem;
+}
+
+/* Footer Semantik */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Responsif untuk Layar HP */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
